@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function color(){
-  #thermal color code
+  #thermal color
   local val=$1
   local c='1;37'
   if [[ $(echo "$val >= 95" | bc) == 1 ]]; then
@@ -55,9 +55,9 @@ function run() {
         
     #clear
     for ((i=0;i<$lastgpucount;i++)) ; do
-
       echo -ne "\033[1A\033[0K\r"
     done
+
     #output
     echo -ne "$outpt\\n"
     sleep 0.5
