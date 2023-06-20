@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 function color(){
   #thermal color code
   local val=$1
@@ -38,7 +37,6 @@ function gpuinf(){
   #\e[1;37\e[0m +10 spaces
   printf "  ..%-9s|  %-4s|  %-16s|  %-16s|  %-17s" "${name: -8}" $id $gpu% $mem% $temp°
 }
-
 
 function run() {
   local llen=0
